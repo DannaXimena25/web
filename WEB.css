@@ -1,0 +1,83 @@
+body{
+    background-color: rgb(221, 195, 247);
+}
+.ter{
+background-image: url("https://img.freepik.com/foto-gratis/fondo-pantalla-halloween-mano-zombie_23-2149122586.jpg");
+background-repeat: no-repeat;
+background-size: 970px 1000px;
+}
+.mot{
+background-image: url("https://www.bhmpics.com/downloads/rock-climbing-wallpaper/20.a474b7d7b56e080e526e93b92fcca255.jpg");
+background-repeat: no-repeat;
+background-size: 970px 1000px;
+}
+
+.fic{
+background-image: url("https://www.xtrafondos.com/wallpapers/vertical/ciudad-ciencia-ficcion-arte-digital-3863.jpg");
+ 
+background-repeat: no-repeat;
+background-size: 970px 1000px;
+}
+
+.libro{
+ width: 950px;
+ height: 200px;
+}
+
+.foto1{
+border-radius: 100%;
+width:215px; 
+height:215px;
+}
+
+.foto2{
+border-radius: 50%;
+width:215px; 
+height:215px;
+  }
+
+  .foto3{
+border-radius: 50%;
+width:215px; 
+height:215px;
+    
+  }
+
+  h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 950px;
+    position: relative;
+    bottom: 40px;
+  }
+  .nu{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+  position: relative;
+    bottom: 0px;
+    color: rgb(215, 227, 236); 
+  }
+
+  h2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float:left;
+    width: 280px; //cambiar para hacer mas ancho
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }

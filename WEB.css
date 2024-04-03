@@ -1,25 +1,38 @@
+
 body{
     background-color: rgb(221, 195, 247);
+    background-size: 500px 550px;
 }
 .ter{
-background-image: url("https://img.freepik.com/foto-gratis/fondo-pantalla-halloween-mano-zombie_23-2149122586.jpg");
+background-color: rgb(122, 171, 236);
 background-repeat: no-repeat;
 background-size: 970px 1000px;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+
 }
 .mot{
-background-image: url("https://www.bhmpics.com/downloads/rock-climbing-wallpaper/20.a474b7d7b56e080e526e93b92fcca255.jpg");
+background-color: rgb(255, 254, 216);
 background-repeat: no-repeat;
 background-size: 970px 1000px;
+display: flex;
+flex-wrap: wrap;
 }
 
 .fic{
-background-image: url("https://www.xtrafondos.com/wallpapers/vertical/ciudad-ciencia-ficcion-arte-digital-3863.jpg");
+background-color: rgb(213, 213, 241);
  
 background-repeat: no-repeat;
 background-size: 970px 1000px;
+
+display: flex;
+flex-wrap: wrap;
 }
 
 .libro{
+  position: relative;
  width: 950px;
  height: 200px;
 }
@@ -44,6 +57,7 @@ height:215px;
   }
 
   h1{
+
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 950px;
     position: relative;
@@ -53,13 +67,23 @@ height:215px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
   position: relative;
     bottom: 0px;
-    color: rgb(215, 227, 236); 
+    color: #f7f7f7;
+    
   }
 
   h2{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #9dcbf0;
   }
+
+  h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    border-radius: 80%;
+  }
+
+
 
   div.gallery {
     margin: 5px;
@@ -81,3 +105,104 @@ height:215px;
     padding: 15px;
     text-align: center;
   }
+
+  .but{
+    position:relative;
+    bottom: -250px;
+    left: 130px;
+  }
+
+  .but2{
+    position:relative;
+    bottom: -400px;
+    left: 240px;
+  }
+
+  .but3{
+    position:relative;
+    bottom: -400px;
+    left: 240px;
+  }
+
+  .card {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    margin: 20px;
+  /*  left: 290px;
+  bottom: -20px;*/
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: #f3f3f3;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+} 
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
